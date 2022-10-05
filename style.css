@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@400;700&display=swap');
+
+body {
+    font-family: "Gemunu Libre", "sans-serif";
+    background: linear-gradient(316deg, rgba(0, 0, 255, 1) 0%, rgba(238, 130, 238, 1) 86%);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #3b3b3b;
+    position: absolute;
+    text-align: center;
+    width: 50%;
+    left: 25%;
+    margin: 0;
+    transition: 1.5s ease;
+}
+
+h1:hover {
+    opacity: 0;
+    cursor: pointer;
+}
+
+h1.white-text {
+    color: #fff;
+}
+
+nav {
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+    left: -100px;
+    top: 12.5px;
+    width: 105px;
+    padding: 10px;
+    transition: 0.6s ease;
+}
+
+nav.active {
+    background-color: rgba(169, 35, 206, 0.112);
+    box-shadow: 2px 2px 5px rgba(99, 27, 119, 0.253);
+    left: 0px;
+    border-radius: 5px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav .fa-bars {
+    position: absolute;
+    left: 105px;
+}
+
+nav .fa-xmark {
+    display: none;
+    position: absolute;
+    left: 105px;
+}
+
+nav .fa-bars:hover{
+    cursor: pointer;
+}
+
+nav .fa-xmark:hover{
+    cursor: pointer;
+    color: #ff0000;
+}
+
+nav.active .fa-bars{
+    display: none;
+}
+
+nav.active .fa-xmark{
+    display: block;
+    transition: 0.2s;
+}
+
+img {
+    padding: 5px;
+    position: absolute;
+    top: 0px;
+    opacity: 0.15;
+    z-index: -1;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
